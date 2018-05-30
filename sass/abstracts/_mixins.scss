@@ -1,0 +1,105 @@
+@mixin flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin align-center {
+  -webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+@mixin justify-space-between {
+  -webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	justify-content: space-between;
+}
+
+@mixin justify-space-around {
+  -webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+}
+
+@mixin flow-row {
+  -webkit-flex-flow: row;
+	-moz-flex-flow: row;
+	-ms-flex-flow: row;
+	flex-flow: row;
+}
+
+@mixin flow-column {
+  -webkit-flex-flow: column;
+	-moz-flex-flow: column;
+	-ms-flex-flow: column;
+	flex-flow: column;
+}
+
+@mixin centralize {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@mixin show {
+  visibility: visible;
+  opacity: 1;
+}
+
+@mixin border-triangle {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-top: 1px solid $color-grey-light;
+  border-right: 0px solid $color-grey-light;
+  border-bottom: 0px solid $color-grey-light;
+  border-left: 1px solid $color-grey-light;
+  margin-top: -0.5rem;
+  top: 0%;
+  left: 5%;
+  content: '';
+  transform: rotate(45deg);
+  background-color: $color-white;
+}
+
+@mixin moveDown-animation {
+  -webkit-animation-name: moveDown;
+  -webkit-animation-duration: 1.5s;
+  animation-name: moveDown;
+  animation-duration: 2s;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media (max-width: 25em) { @content }; //400px
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) { @content }; //600px
+  }
+  @if $breakpoint == large-phone {
+    @media (max-width: 43.75em) { @content }; //700px
+  }
+  @if $breakpoint == tab-portrait {
+    @media (max-width: 56.25em) { @content }; //900px
+  }
+  @if $breakpoint == tab-landscape {
+    @media (max-width: 75em) { @content }; //1200px
+  }
+  @if $breakpoint == small-desktop {
+    @media (max-width: 92.5em) { @content }; //1480px
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 112.5em) { @content }; //1800px +
+  }
+}

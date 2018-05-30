@@ -1,0 +1,51 @@
+.topbar {
+  background-color: $color-tertiary;
+  text-transform: uppercase;
+
+  @include responsive(tab-portrait) {
+    background-color: $color-secondary;
+  }
+
+  &__container {
+    @include flex;
+    @include align-center;
+    @include justify-space-between;
+    width: 90.2%;
+    height: 5rem;
+    margin: 0 auto;
+    @include responsive(tab-portrait) {
+      height: 4rem;
+    }
+  }
+
+  &__announcement {
+    width: 39.4rem;
+
+    @include responsive(tab-portrait) {
+      width: 30rem;
+    }
+  }
+
+  &__country-select {
+    @include flex;
+    @include align-center;
+    margin-left: 7rem;
+
+    @include responsive(phone) {
+      margin-left: 0;
+    }
+  }
+}
+
+.second-topbar {
+  @include responsive(tab-portrait) {
+    @include flex;
+    @include align-center;
+    background-color:$color-tertiary;
+    height: 3.5rem;
+
+    &__announcement {
+      width: 100%;
+    }
+  }
+}

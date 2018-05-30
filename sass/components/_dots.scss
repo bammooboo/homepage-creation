@@ -1,0 +1,16 @@
+.dot {
+  cursor: pointer;
+  height: 1.2rem;
+  width: 1.2rem;
+  margin: 0 .2rem;
+  background-color: $color-white;
+  opacity: 0.6;
+  border-radius: 50%;
+  transition: opacity 0.5s ease;
+}
+
+.active, .dot:hover {
+  height: 1.6rem;
+  width: 1.6rem;
+  opacity: 1;
+}

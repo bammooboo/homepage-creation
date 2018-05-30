@@ -1,0 +1,73 @@
+.navigation {
+  background-color: $color-white;
+
+  &__contents {
+    @include flex;
+    @include align-center;
+    @include justify-space-between;
+    max-width: 89.6%;
+    height: 10rem;
+    margin: 0 auto;
+    @include responsive(phone) {
+      height: 7rem;
+    }
+  }
+
+  &__logo-container {
+    width: 15rem;
+    @include responsive(tab-landscape) {
+      width: 10rem;
+    }
+    @include responsive(phone) {
+      width: 5.5rem;
+    }
+  }
+
+  &__logo {
+    height: 6.3rem;
+    width: 8rem;
+    @include responsive(phone) {
+      height: 4.3rem;
+      width: 5.5rem;
+    }
+  }
+
+  &__nav {
+    width: 47.5%;
+  }
+
+  &__list {
+    @include flex;
+    @include justify-space-between;
+    text-transform: uppercase;
+    @include responsive(tab-portrait) {
+      flex-flow: column;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+
+  &__hamburger,
+  &__icons {
+    @include responsive(phone) {
+      width: 2.7rem;
+    }
+  }
+
+  &__icon:hover {
+    cursor: pointer;
+  }
+
+  &__icon:not(:last-child) {
+    margin-right: 1.1rem;
+    @include responsive(tab-landscape) {
+      margin-right: .5rem;
+    }
+  }
+}

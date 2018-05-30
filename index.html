@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto+Mono:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Homepage</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- topbar announcement section -->
+      <div class="topbar">
+          <div class="topbar__container">
+          <div class="topbar__currency-select">
+            <button class="btn btn--secondary">Gb</button>
+            <button class="btn btn--secondary">Usd</button>
+          </div>
+          <div class="topbar__announcement desktop">
+            <p class="message">Announce something here</p>
+          </div>
+          <div class="topbar__country-select">
+            <p class="country">Uk</p>
+            <img src="assets/icon/down.svg" alt="Down arrow" class="down-arrow" />
+          </div>
+        </div>
+      </div>
+      <div class="second-topbar mobile">
+        <div class="second-topbar__announcement mobile">
+          <p class="message">Announce something here</p>
+        </div>
+      </div>
+      <!-- navigation section -->
+      <div class="navigation">
+        <div class="navigation__contents">
+          <!-- mobile nav dropdown -->
+          <div class="navigation__hamburger dropdown mobile">
+            <img src="assets/icon/hamburger.svg" alt="Menu" />
+            <div class="dropdown__nav-contents">
+              <nav class="dropdown--nav">
+                <ul class="navigation__list">
+                  <li class="nav-choices"><a href="#" class="navigation__link">Home</a></li>
+                  <li class="nav-choices"><a href="#" class="navigation__link">Collections</a></li>
+                  <li class="nav-choices"><a href="#" class="navigation__link">Lookbook</a></li>
+                  <li class="nav-choices"><a href="#" class="navigation__link">About</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- regular nav -->
+          <div class="navigation__logo-container">
+            <img src="assets/Image/Large.svg" alt="Logo" class="navigation__logo" />
+          </div>
+          <nav class="navigation__nav desktop">
+            <ul class="navigation__list">
+              <li class="nav-choices"><a href="#" class="navigation__link">Home</a></li>
+              <li class="nav-choices"><a href="#" class="navigation__link">Collections</a></li>
+              <li class="nav-choices"><a href="#" class="navigation__link">Lookbook</a></li>
+              <li class="nav-choices"><a href="#" class="navigation__link">About</a></li>
+              <!-- collections dropdown -->
+              <div class="dropdown overlay">
+                <div class="dropdown__collections-content">
+                  <div class="dropdown--collections collections">
+                    <div class="collections__container">
+                      <div class="collections__block">
+                        <ul class="collections__list">
+                          <li class="collections__list-item">Collection 1</li>
+                          <li class="collections__list-item">Collection 2</li>
+                          <li class="collections__list-item">Collection 3</li>
+                          <li class="collections__list-item">Collection 4</li>
+                        </ul>
+                      </div>
+                      <div class="collections__block">
+                        <ul class="collections__list">
+                          <li class="collections__list-item">Collection 1</li>
+                          <li class="collections__list-item">Collection 2</li>
+                          <li class="collections__list-item">Collection 3</li>
+                          <li class="collections__list-item">Collection 4</li>
+                        </ul>
+                      </div>
+                      <div class="collections__block-large">
+                        <img src="assets/Image/Large.svg" alt="Logo" class="collections__image" />
+                      </div>
+                      <div class="collections__block-large">
+                        <img src="assets/Image/Large.svg" alt="Logo" class="collections__image" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </nav>
+          <div class="navigation__icons">
+            <img src="assets/icon/search.svg" alt="Search" class="navigation__icon desktop" />
+            <img src="assets/icon/profile.svg" alt="Profile" class="navigation__icon desktop" />
+            <img src="assets/icon/heart.svg" alt="Favourites" class="navigation__icon desktop" />
+            <div class="dropdown u-inline-block">
+              <img src="assets/icon/bag.svg" alt="Cart" class="navigation__icon" />
+              <!-- cart dropdown -->
+              <div class="dropdown__cart-content">
+                <div class="dropdown--cart cart">
+                  <h3 class="cart__title title-mid">Your cart</h3>
+                  <div class="cart__contents">
+                    <div class="cart__products">
+                      <div class="cart__item">
+                        <div class="cart__item__image">
+                          <img src="assets/Image/Large.svg" alt="Logo" class="cart__item__image__img" />
+                        </div>
+                        <div class="cart__item__details">
+                          <div class="cart__item__product-variants">
+                            <p class="product-title">Product title</p>
+                            <p class="variant-name">Variant name</p>
+                          </div>
+                          <div class="cart__quantity-selector">
+                            <button class="btn btn--quantity">-</button>
+                            <p class="quantity">2</p>
+                            <button class="btn btn--quantity">+</button>
+                          </div>
+                          <div class="cart__total">
+                            <p class="price">£60.00</p>
+                          </div>
+                        </div>
+                        <button class="btn btn--cancel">
+                          <img src="assets/icon/cancel.svg" alt="cancel" class="close" />
+                        </button>
+                      </div>
+                      <div class="cart__item">
+                        <div class="cart__item__image">
+                          <img src="assets/Image/Large.svg" alt="Logo" class="cart__item__image__img" />
+                        </div>
+                        <div class="cart__item__details">
+                          <div class="cart__item__product-variants">
+                            <p class="product-title">Product title</p>
+                            <p class="variant-name">Variant name</p>
+                          </div>
+                          <div class="cart__quantity-selector">
+                            <button class="btn btn--quantity">-</button>
+                            <p class="quantity">2</p>
+                            <button class="btn btn--quantity">+</button>
+                          </div>
+                          <div class="cart__total">
+                            <p class="price">£60.00</p>
+                          </div>
+                        </div>
+                        <button class="btn btn--cancel">
+                          <img src="assets/icon/cancel.svg" alt="cancel" class="close" />
+                        </button>
+                      </div>
+                    </div>
+                    <button class="btn btn-wide btn--primary">Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- image slider section -->
+      <main>
+        <section class="section-slider">
+          <div class="slider__container">
+            <div class="slider__contents fade">
+              <img src="assets/Image/Slider/Background.jpg" alt="Image 1" class="slider__image">
+              <div class="slider__text-box">
+                <h1 class="heading-primary u-margin-bottom-medium">
+                  Image Slider
+                </h1>
+                <p class="heading-secondary u-margin-bottom-large">Tell us your brand's story through videos and images</p>
+                <button class="btn btn-regular btn--primary">
+                  Explore
+                </button>
+              </div>
+            </div>
+            <div class="slider__contents fade">
+              <img src="assets/Image/Slider/Background.jpg" alt="Image 2" class="slider__image">
+              <div class="slider__text-box">
+                <h1 class="heading-primary u-margin-bottom-medium">
+                  Image Two
+                </h1>
+                <p class="heading-secondary u-margin-bottom-large">Tell us your brand's story through videos and images</p>
+                <button class="btn btn-regular btn--primary">
+                  Explore
+                </button>
+              </div>
+            </div>
+            <div class="slider__contents fade">
+              <img src="assets/Image/Slider/Background.jpg" alt="Image 3" class="slider__image">
+              <div class="slider__text-box">
+                <h1 class="heading-primary u-margin-bottom-medium">
+                  Image Three
+                </h1>
+                <p class="heading-secondary u-margin-bottom-large">Tell us your brand's story through videos and images</p>
+                <button class="btn btn-regular btn--primary">
+                  Explore
+                </button>
+              </div>
+            </div>
+            <div class="slider__arrows">
+              <a class="slider__arrow-previous" onclick="toggleImages(-1)">
+                <img src="assets/icon/back.svg" alt="Previous Image" class="previous-arrow"/>
+              </a>
+              <a class="slider__arrow-next" onclick="toggleImages(1)">
+                <img src="assets/icon/forward.svg" alt="Next Image" class="next-arrow"/>
+              </a>
+            </div>
+            <div class="slider__pagination">
+              <span class="dot" onclick="thisImage(1)"></span>
+              <span class="dot" onclick="thisImage(2)"></span>
+              <span class="dot" onclick="thisImage(3)"></span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
