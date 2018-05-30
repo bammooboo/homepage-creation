@@ -7,37 +7,37 @@
 
 @mixin align-center {
   -webkit-align-items: center;
-	-moz-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
 }
 
 @mixin justify-space-between {
   -webkit-justify-content: space-between;
-	-moz-justify-content: space-between;
-	-ms-justify-content: space-between;
-	justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
 }
 
 @mixin justify-space-around {
   -webkit-justify-content: space-around;
-	-moz-justify-content: space-around;
-	-ms-justify-content: space-around;
-	justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
 }
 
 @mixin flow-row {
   -webkit-flex-flow: row;
-	-moz-flex-flow: row;
-	-ms-flex-flow: row;
-	flex-flow: row;
+  -moz-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
 }
 
 @mixin flow-column {
   -webkit-flex-flow: column;
-	-moz-flex-flow: column;
-	-ms-flex-flow: column;
-	flex-flow: column;
+  -moz-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
 }
 
 @mixin centralize {
